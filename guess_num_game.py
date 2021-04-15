@@ -1,6 +1,10 @@
 import random
+start = input('請決定隨機數字範圍開始值:')
+end = input('請決定隨機數字範圍結束值:')
+start = int(start)
+end = int(end)
 
-r = random.randint(1, 100) #1~100 產生隨機數
+r = random.randint(start, end) #1~100 產生隨機數
 count = 0
 while True:
 	count += 1 #是 count = count + 1 的快寫法
